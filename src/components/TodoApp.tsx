@@ -18,6 +18,7 @@ const TodoApp: React.FC = () => {
     const fetchTodos = async () => {
       const data = await getTodos();
       setTodos(data);
+      console.log('Todos')
     };
     fetchTodos();
   }, []);
