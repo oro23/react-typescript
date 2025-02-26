@@ -1,27 +1,20 @@
-# Use a node image to build the project
-FROM node:16-alpine AS build
+# Use an official Node.js runtime as a parent image
+FROM node:16
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy the package.json and install dependencies
+# Copy package.json and package-lock.json (if exists)
 COPY package*.json ./
+
+# Install dependencies (including npm)
 RUN npm install
 
-# Copy the rest of the application
+# Copy the rest of your app’s code
 COPY . .
 
-# Build the app
-RUN npm run build
-
-# Use a lighter image to serve the app
-FROM nginx:alpine
-
-# Copy the build files from the previous stage
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Expose port
+# Expose the app's port (if you're running a web server)
 EXPOSE 8085
 
-# Start the Nginx server
-CMD ["nginx", "-g", "daemon off;"]
+# Set the command to run your tests (if that's the purpose)
+CMD ["npm", "run", "test"]
