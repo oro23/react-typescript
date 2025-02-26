@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Use BrowserRouter
 // import Login from "./pages/Login";
-import TodoApp from "./components/TodoApp";
+// import TodoApp from "./components/TodoApp";
 // import Dashboard from "./pages/Dashboard";
 // import { AuthProvider } from "./context/AuthContext";
 // import ProtectedRoute from "./context/ProtectedRoute";
@@ -17,7 +17,10 @@ function App() {
     //     </Routes>
     //   </AuthProvider>
     // </Router>
-    <TodoApp />
+    // <TodoApp />
+    <>
+    <h1>Welcome</h1>
+    </>
   );
 }
 
