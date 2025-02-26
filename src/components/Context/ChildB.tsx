@@ -1,7 +1,7 @@
-import { useContext } from "react";
-import { MessageContext } from "../../App";
+// import { useContext } from "react";
+// import { MessageContext } from "../../App";
 import ChildC from "./ChildC";
-const message = useContext(MessageContext);
+// const message = useContext(MessageContext);
 
 function ChildB() {
   return (

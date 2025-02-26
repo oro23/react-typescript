@@ -1,9 +1,9 @@
 // import { useState } from "react";
 // import ListGroup from "./components/ListGroup";
-import Alert from "./components/Alert";
+// import Alert from "./components/Alert";
 import "bootstrap/dist/css/bootstrap.css";
-import ParentComponent from "./components/ParentComponent";
-import { createContext } from "react";
+// import ParentComponent from "./components/ParentComponent";
+// import { createContext } from "react";
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -19,7 +19,7 @@ function App() {
   //   console.log(item);
   // };
 
-  const MessageContext = createContext<string>("");
+  // const MessageContext = createContext<string>("");
 
   return (
     <>

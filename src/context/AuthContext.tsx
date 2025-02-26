@@ -1,6 +1,6 @@
 // context/AuthContext.tsx
 import React, { createContext, useState, useEffect, ReactNode } from "react";
-import { redirect, useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import {
   setToken,
   getToken,
